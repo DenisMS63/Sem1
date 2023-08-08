@@ -1,6 +1,6 @@
 ﻿//Программа для отображение чисел от -N До N. Число N вводит пользователь.
 
-Console.WriteLine("Введите число");
+Console.WriteLine("Введите целое положительное число");
 int num = Convert.ToInt32(Console.ReadLine());
 int i = -num;
 
