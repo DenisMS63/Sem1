@@ -5,6 +5,6 @@ int num = Convert.ToInt32(Console.ReadLine());
 int i = -num;
 
 while (i<=num) {
-    Console.WriteLine(i);
+    Console.Write($" {i}");
     i += 1;
 }
