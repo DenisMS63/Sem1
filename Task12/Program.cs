@@ -9,10 +9,15 @@ int num1 = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите второе число");
 int num2 = Convert.ToInt32(Console.ReadLine());
 
-int result = RemainderOfTheDivison(num1, num2);
+int result = RemainderOfTheDivison(num1, num2); 
+
 
 if (result == 0) Console.WriteLine("Кратно");
 else Console.WriteLine($"Некратно, остаток от деления - {result}");
+
+Console.WriteLine("\n Проверка тернальным оператором");
+string result2 = result == 0 ? "Кратно" : $"Некратно, остаток от деления - {result}";
+Console.WriteLine(result2);
 
 int RemainderOfTheDivison(int n1, int n2)
 {
