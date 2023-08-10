@@ -10,14 +10,14 @@ Console.WriteLine("Введите второе число");
 int num2 = Convert.ToInt32(Console.ReadLine());
 
 
-int MultiplicityTwoNumbers(int n1, int n2)
+int RemainderOfTheDivison(int n1, int n2)
 {
     int num = n1 % n2;
 
     return num;    
 }
 
-int result = MultiplicityTwoNumbers(num1, num2);
+int result = RemainderOfTheDivison(num1, num2);
 
 
 if (result == 0) Console.WriteLine("Кратно");
