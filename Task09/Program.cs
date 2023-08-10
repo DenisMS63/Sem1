@@ -7,11 +7,9 @@ Console.WriteLine($"Случайное число на отрезке от 10 д
 Console.WriteLine($"Число - {num}");
 
 int num2 = num % 10;
-int num3 = (num - num2)/10;
+int num3 = num/10;
 
-int max = num2;
-
-if (num3 > max) 
+if (num3 > num2) 
 {
     Console.WriteLine($"Наибольшая цифра - {num3}");
 }
