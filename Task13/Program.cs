@@ -4,24 +4,29 @@
 Console.WriteLine("Введите любое целое число");
 int number = Convert.ToInt32(Console.ReadLine());
 
+ThirdDigit(number);
 
-if (number > 99 && number < 1000)
+
+void ThirdDigit(int num)
 {
-    int x = number % 10;
-    Console.WriteLine($"Третья цифра - {x}");
-}
-else if (number < 100)
-{
-    Console.WriteLine("Третьей цифры нет");
-}
-else
-{
-    while (number > 999)
+    if (num > 99 && num < 1000)
     {
-        number /= 10;
+        int x = num % 10;
+        Console.WriteLine($"Третья цифра - {x}");
     }
+    else if (num < 100)
+    {
+        Console.WriteLine("Третьей цифры нет");
+    }
+    else
+    {
+        while (num > 999)
+        {
+            num /= 10;
+        }
 
-    int result = number % 10;
-    Console.WriteLine($"Третья цифра - {result}");
+        int result = num % 10;
+        Console.WriteLine($"Третья цифра - {result}");
+    }
 }
 
