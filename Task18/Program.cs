@@ -13,4 +13,5 @@ string Range (int x)
 Console.WriteLine("Введите номер четверти");
 int quarter = Convert.ToInt32(Console.ReadLine());
 
-Console.WriteLine(Range(quarter));
+if (Range(quarter) == null) Console.WriteLine("Несуществующая четверть");
+else Console.WriteLine(Range(quarter));
