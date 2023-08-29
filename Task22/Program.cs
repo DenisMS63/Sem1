@@ -2,7 +2,7 @@
 // и отображает таблицу квадратов чисел от 1 до N
 
 Console.WriteLine($"Введите число N");
-int NN = Convert.ToInt32(Console.ReadLine());
+int inputN = Convert.ToInt32(Console.ReadLine());
 
 void TableOfSquares (int N, int x)
 {
