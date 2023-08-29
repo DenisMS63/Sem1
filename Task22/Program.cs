@@ -14,4 +14,4 @@ void TableOfSquares (int N, int x)
     }
 }
 
-TableOfSquares (NN, 2);
+TableOfSquares (inputN, 2);
