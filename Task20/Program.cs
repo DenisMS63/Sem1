@@ -15,18 +15,9 @@ Console.Write($"Y - ");
 double y2Point = Convert.ToDouble(Console.ReadLine());
 
 double DistanceBetweenTwoPoints2D (double x1, double y1, double x2, double y2)
-{
-    // double diffX = x2 - x1;
-    // double diffY = y2 - y1;
-    // double sqrtX = Math.Pow(diffX, 2);
-    // double sqrtY = Math.Pow(diffY, 2);
-    // double sumOfPow = sqrtX + sqrtY;
-    
-    // double distance = Math.Sqrt(sumOfPow);
-
-    double distance = Math.Sqrt(Math.Pow(x2 - x1, 2) + Math.Pow(y2 - y1, 2));
-    double result = Math.Round(distance, 2, MidpointRounding.ToZero);
-    return result;
+{  
+    return Math.Sqrt(Math.Pow(x2 - x1, 2) + Math.Pow(y2 - y1, 2));
 }
 
-Console.WriteLine($"Расстояние между точками: {DistanceBetweenTwoPoints2D(x1Point, y1Point, x2Point, y2Point)}");
+double result = Math.Round(DistanceBetweenTwoPoints2D(x1Point, y1Point, x2Point, y2Point), 2, MidpointRounding.ToZero);
+Console.WriteLine($"Расстояние между точками: {result}");
