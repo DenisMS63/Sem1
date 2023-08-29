@@ -10,7 +10,7 @@ void TableOfSquares (int N, int x)
     for (int i = 1; i <= N; i++)
     {
         double square = Math.Pow(i, x);
-        Console.WriteLine($"{i} -> {square}");
+        Console.WriteLine($"{i, 3} -> {square, 5}");
     }
 }
 
