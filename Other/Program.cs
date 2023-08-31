@@ -1,10 +1,7 @@
 ﻿// Программа генерирует массив из случаный чисел 
 //и записывает значения в порядке возрастания  
 
-Console.WriteLine("Массив из случайных чисел");
-
-
-void RandArr(int n)
+int [] RandArr(int n)
 {
     int[] arr = new int[n];
     Random rnd = new Random();
@@ -16,7 +13,7 @@ void RandArr(int n)
     }
 }
 
-void SortArr(int[] ar)
+void SortArr(int [] ar)
 {
 
 
@@ -36,7 +33,6 @@ void SortArr(int[] ar)
 
 }
 
-RandArr(10);
-int [] array = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Массив из случайных чисел");
 
-Console.WriteLine(SortArr(array));
+SortArr(RandArr(10));
