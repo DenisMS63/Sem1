@@ -14,12 +14,13 @@ int [] CreateRandomArray (int size, int min, int max)
 
 void PrintArray(int[] arr)
 {
-    Console.Write($" |");
+    Console.Write($" [ ");
     for (int i = 0; i < arr.Length; i++)
     {
-        Console.Write($" {arr[i]} |", 5);
+        if(i == arr.Length-1) Console.Write($" {arr[i]} ", 5);
+        else Console.Write($" {arr[i]}. | ", 5);
     }
-    Console.WriteLine();
+    Console.WriteLine($" ]");
 }
 
 int NumberOfTwoDigits (int [] arr)
@@ -33,7 +34,13 @@ int NumberOfTwoDigits (int [] arr)
     return count;
 }
 
-int [] ar1 = CreateRandomArray (123, -11, 11);
+// Console.WriteLine($"Введите диапозон поиска");
+// Console.Write($"От ");
+// int from = Convert.ToInt32(Console.ReadLine());
+// Console.Write($"До ");
+// int to = Convert.ToInt32(Console.ReadLine());
+
+int [] ar1 = CreateRandomArray (10, -20, 20);
 
 Console.WriteLine($"Массив из случайных элементов");
 PrintArray(ar1);
