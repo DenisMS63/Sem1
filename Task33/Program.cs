@@ -12,14 +12,15 @@ int [] CreateRandomArray (int size, int min, int max)
     return arr;
 }
 
-void PrintArray(int[] arr)
+void PrintArray(int [] arr)
 {
-    Console.Write($" |");
+    Console.Write($" [ ");
     for (int i = 0; i < arr.Length; i++)
     {
-        Console.Write($" {arr[i]} |");
+        if (i == arr.Length - 1) Console.Write($" {arr[i]}. ", 5);
+        else Console.Write($" {arr[i]}. | ", 5);
     }
-    Console.WriteLine();
+    Console.WriteLine($" ]");
 }
 
 bool NumberInArray (int[] arr, int num)
@@ -34,11 +35,11 @@ bool NumberInArray (int[] arr, int num)
 
 int [] ar1 = CreateRandomArray (10, -10, 10);
 
-Console.Write($"Введите число для поиска по массиву: ");
-int number = Convert.ToInt32(Console.ReadLine());
-
 Console.WriteLine($"Массив из случайных элементов");
 PrintArray(ar1);
+
+Console.Write($"Введите число для поиска по массиву: ");
+int number = Convert.ToInt32(Console.ReadLine());
 
 //string result = NumberInArray (ar1, number) ? "Да, такое число есть" : "Нет такого числа";
 //Console.WriteLine($"Результат поиска числа по массиву: {result}");
