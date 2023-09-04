@@ -18,4 +18,4 @@ Console.Write($"Введите длину стороны C: ");
 int c = Convert.ToInt32(Console.ReadLine());
 
 Console.Write(CheckTriangleExist (a, b, c) ? $"Такой треугольник [ Cуществует ] " 
-: "Такой треугольник [ НЕсуществует ]");
+: "Такой треугольник [ НЕ существует ]");
