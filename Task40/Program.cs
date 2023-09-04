@@ -3,8 +3,10 @@
 
 bool CheckTriangleExist (int n1, int n2, int n3)
 {    
-    if (n1 + n2 > n3 && n1 + n3 > n2 && n2 + n3 > n1) return true;
-    else return false;
+    // if (n1 + n2 > n3 && n1 + n3 > n2 && n2 + n3 > n1) return true;
+    // else return false;
+
+    return n1 + n2 > n3 && n1 + n3 > n2 && n2 + n3 > n1;
 }
 
 Console.WriteLine($"Проверка по Теореме о неравенстве треугольника");
