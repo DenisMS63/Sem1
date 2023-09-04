@@ -56,4 +56,4 @@ double[] ar1 = CreateRandomArray(3, 0, 5);
 Console.WriteLine($"Массив из случайных вещественных чисел");
 PrintArray(ar1);
 
-Console.WriteLine($"Разница максимального и минимального эл-ов {MaxMinDifference (MaxOfArray (ar1), MinOfArray (ar1))}");
+Console.WriteLine($"Разница максимального и минимального эл-ов -> {MaxMinDifference (MaxOfArray (ar1), MinOfArray (ar1))}");
