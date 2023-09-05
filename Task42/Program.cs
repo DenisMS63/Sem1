@@ -28,5 +28,5 @@ int DecimalNumToBinary_2 (int num)
 Console.Write($"Введите десятичное число: ");
 int x = Convert.ToInt32(Console.ReadLine());
 
-Console.WriteLine ($"Число {x} в двоичном представлении -> [ {DecimalNumToBinary (x)} ]");
-Console.WriteLine ($"Число {x} в двоичном представлении -> [ {DecimalNumToBinary_2 (x)} ]");
+Console.WriteLine ($"Число {x} в двоичном представлении (string) -> [ {DecimalNumToBinary (x)} ]");
+Console.WriteLine ($"Число {x} в двоичном представлении (int) -> [ {DecimalNumToBinary_2 (x)} ]");
