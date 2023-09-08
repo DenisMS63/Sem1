@@ -24,8 +24,15 @@ double kk2 = Convert.ToDouble (Console.ReadLine());
 Console.Write($"Введите значение b2: ");
 double bb2 = Convert.ToDouble (Console.ReadLine());
 
+if (kk1 == kk2)
+{
+    Console.WriteLine($"Точки пересечения нет, прямые параллельны друг другу.");
+}
+else
+{
 double xCoordinate = XCoordinate (kk1, bb1, kk2, bb2);
 double yCoordinate = YCoordinate (kk1, bb1, xCoordinate);
 
 Console.WriteLine($"\nКоордината Х точки пересечения -> [ {xCoordinate} ]");
 Console.WriteLine($"Координата Y точки пересечения -> [ {yCoordinate} ]");
+}
