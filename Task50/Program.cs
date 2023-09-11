@@ -45,8 +45,11 @@ int userColumn = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine($"\nДвумерный массив (рандомный)\n");
 PrintMatrix(createRandomMatrix);
 
-int findElemOfMatrix = FindElemOfMatrix (userRow, userColumn, createRandomMatrix);
+
 if(userRow < 0 || userColumn < 0 ) Console.WriteLine($"ОШИБКА: номер не может быть отрицательным");
 if(userRow > createRandomMatrix.GetLength(0) || userColumn > createRandomMatrix.GetLength(1)) Console.WriteLine($"ОШИБКА: такого элемента не существует");
-else Console.WriteLine($"\nЭлемент по введенным индексам -> [ {findElemOfMatrix} ]");
-
+else 
+{
+int findElemOfMatrix = FindElemOfMatrix (userRow, userColumn, createRandomMatrix);
+Console.WriteLine($"\nЭлемент по введенным индексам -> [ {findElemOfMatrix} ]");
+}
