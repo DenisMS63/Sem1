@@ -23,7 +23,7 @@ void PrintMatrix(double[,] arr)
         Console.Write($"[ ");
         for (int j = 0; j < arr.GetLength(1); j++)
         {
-            Console.Write($" {arr[i, j]:F1}. ");
+            Console.Write($" {arr[i, j]:F1}. ", 4);
         }
         Console.WriteLine($" ]\n");
     }
