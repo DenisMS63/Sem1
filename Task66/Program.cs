@@ -9,20 +9,14 @@ int numberN = Convert.ToInt32(Console.ReadLine());
 
 if (numberM < numberN)
 {
-int sumOfNumbersFromMtoN = SumOfNumbersFromMtoN(numberM, numberN);
-Console.Write($"Сумма чисел на промежутке от M до N -> {sumOfNumbersFromMtoN}");
-}
-else Console.Write($"\nОШИБКА: число М больше числа N, введите заново");
+    int sumOfNumbersFromMtoN = SumOfNumbersFromMtoN(numberM, numberN);
+    Console.Write($"Сумма чисел на промежутке от M до N -> {sumOfNumbersFromMtoN}");
+} 
+else Console.Write($"\nОШИБКА: введите значения заново");
 
 
 int SumOfNumbersFromMtoN(int m, int n)
 {
-
     if (m > n) return 0;
     return m + SumOfNumbersFromMtoN(m + 1, n);
-
-
-
-
-
 }
